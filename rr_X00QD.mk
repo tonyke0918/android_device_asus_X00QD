@@ -28,6 +28,11 @@ $(call inherit-product, vendor/rr/config/common_full_phone.mk)
 # Inherit from X00QD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+# RR
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
 PRODUCT_BRAND := asus
 PRODUCT_DEVICE := X00QD
 PRODUCT_MANUFACTURER := asus
